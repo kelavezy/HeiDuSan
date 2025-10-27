@@ -7,6 +7,7 @@
   <!-- 引入外部资源 -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
 
   <!-- 水墨鎏金配色配置 -->
   <script>
@@ -72,6 +73,10 @@
       }
       .gold-gradient {
         background: linear-gradient(135deg, #1a1a1a 0%, #333333 50%, #1a1a1a 100%);
+      }
+      .font-ink-calligraphy {
+      font-family: "Ma Shan Zheng", cursive; /* 应用手写字体 */
+      letter-spacing: 0.1em; /* 增加字间距，增强水墨书法感 */
       }
     }
   </style>
@@ -143,11 +148,9 @@
 
         <!-- 板块1内容摘要 -->
         <div class="text-center mb-8 p-6 bg-ink/50 rounded-lg border border-gold/10">
-          <h3 class="text-gold text-xl font-bold mb-4">欢迎来到独山玄览</h3>
-          <p class="text-gray-300 px-4 leading-relaxed">
-            水墨丹青绘山河，鎏金点缀映独山。<br>
-            这里是首页板块，包含重要通知和轮播展示。<br>
-            向下滑动查看更多内容。
+          <h1 class="text-gold text-4xl font-bold mb-4 font-ink-calligraphy">欢迎来到独山玄览</h1>
+          <p class="text-gray-300 px-4 leading-relaxed font-ink-calligraphy">
+            水墨丹青绘山河，鎏金点缀映独山<br>
           </p>
         </div>
       </div>
@@ -168,29 +171,35 @@
 
         <!-- 新闻列表（水墨卡片风格） -->
         <div class="space-y-4">
-          <article class="bg-ink-dark rounded-lg shadow-md overflow-hidden transform transition hover:shadow-gold/10 border border-gold/10">
-            <img src="image/news1.jpg" alt="新闻图片" class="w-full h-48 object-cover filter grayscale hover:grayscale-0 transition-all duration-700">
-            <div class="p-4">
-              <h3 class="text-base font-semibold mb-2 text-gold-light">青记讲堂——好记者讲好故事进校园</h3>
-              <p class="text-gray-400 text-sm">青海省新闻战线"好记者讲好故事"活动走进校园，师生共同聆听新闻背后的故事...</p>
-            </div>
-          </article>
+          <a href="news01.html" class="block">
+            <article class="bg-ink-dark rounded-lg shadow-md overflow-hidden transform transition hover:shadow-gold/10 border border-gold/10">
+              <img src="image/news1.jpg" alt="新闻图片" class="w-full h-48 object-cover filter grayscale hover:grayscale-0 transition-all duration-700">
+              <div class="p-4">
+                <h3 class="text-base font-semibold mb-2 text-gold-light">守护好“中华水塔”</h3>
+                <p class="text-gray-400 text-sm">习近平总书记指出：“青海最大的价值在生态、最大的责任在生态、最大的潜力也在生态...</p>
+              </div>
+            </article>
+          </a>
 
-          <article class="bg-ink-dark rounded-lg shadow-md overflow-hidden transform transition hover:shadow-gold/10 border border-gold/10">
-            <img src="image/news2.jpg" alt="新闻图片" class="w-full h-48 object-cover filter grayscale hover:grayscale-0 transition-all duration-700">
-            <div class="p-4">
-              <h3 class="text-base font-semibold mb-2 text-gold-light">黑独山景区荣获省级文明景区称号</h3>
-              <p class="text-gray-400 text-sm">经过严格评审，黑独山景区被授予省级文明景区称号，精神文明建设再上新台阶...</p>
-            </div>
-          </article>
+          <a href="news02.html" class="block">
+            <article class="bg-ink-dark rounded-lg shadow-md overflow-hidden transform transition hover:shadow-gold/10 border border-gold/10">
+              <img src="image/news2.jpg" alt="新闻图片" class="w-full h-48 object-cover filter grayscale hover:grayscale-0 transition-all duration-700">
+              <div class="p-4">
+                <h3 class="text-base font-semibold mb-2 text-gold-light">黑独山景区荣获省级文明景区称号</h3>
+                <p class="text-gray-400 text-sm">经过严格评审，黑独山景区被授予省级文明景区称号，精神文明建设再上新台阶...</p>
+              </div>
+            </article>
+          </a>
 
-          <article class="bg-ink-dark rounded-lg shadow-md overflow-hidden transform transition hover:shadow-gold/10 border border-gold/10">
-            <img src="image/news3.jpg" alt="新闻图片" class="w-full h-48 object-cover filter grayscale hover:grayscale-0 transition-all duration-700">
-            <div class="p-4">
-              <h3 class="text-base font-semibold mb-2 text-gold-light">黑独山景区旅游旺季接待工作准备就绪</h3>
-              <p class="text-gray-400 text-sm">景区已完成各项准备工作，将为游客提供更优质的服务和体验...</p>
-            </div>
-          </article>
+          <a href="news03.html" class="block">
+            <article class="bg-ink-dark rounded-lg shadow-md overflow-hidden transform transition hover:shadow-gold/10 border border-gold/10">
+              <img src="image/news3.jpg" alt="新闻图片" class="w-full h-48 object-cover filter grayscale hover:grayscale-0 transition-all duration-700">
+              <div class="p-4">
+                <h3 class="text-base font-semibold mb-2 text-gold-light">黑独山景区旅游旺季接待工作准备就绪</h3>
+                <p class="text-gray-400 text-sm">景区已完成各项准备工作，将为游客提供更优质的服务和体验...</p>
+              </div>
+            </article>
+          </a>
         </div>
       </div>
 
@@ -379,7 +388,7 @@
         bannerVideo.muted = true;
       } else {
         videoVolume.innerHTML = '<i class="fa fa-volume-up"></i>';
-        bannerVideo.muted = false;
+        bannerVideo.Muted = false;
       }
     }
 
